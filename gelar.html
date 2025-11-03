@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background-color: white;
+  }
+
+  .header {
+    background-color: rgb(255, 105, 105);
+  }
+
+  .gambar {
+    width: 300px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    display: flex;
+    min-height: 14vh;
+  }
+  
+  .sidebar {
+    background: white;
+    width: 15%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .1);
+  }
+
+  .sidebar ul {
+  list-style: none;
+  padding: 0;
+ }
+
+  .sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+
+  .sidebarli a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .sidebar li:hover, .sidebar li a:hover {
+    color: #db0007;
+    font-weight: bold;
+  }
+  
+  .content {
+    background: white;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .highlight {
+    background: #fff0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #db0007;
+  }
+
+  .players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .player-card {
+    height: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px #d86569;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 250px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .player-image img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .player-data {
+    text-align: center;
+  }
+</style>
+<body>
+   <div class="header">
+     <img src="FC-Bayern-Munchen-Logo.png" class="gambar">
+   </div>
+
+   <div class="container">
+     <div class="sidebar">
+        <h3>Navigasi</h3>
+        <ul>
+          <li>
+            <a href="bayern_munchen.html">BERANDA</a>
+          </li>
+          <li>
+            <a href="pemain.html">PEMAIN</a>
+          </li>
+          <li>
+            <a href="legenda.html">LEGENDA</a>
+          </li>
+          <li>
+            <a href="gelar.html">GELAR</a>
+          </li>
+        </ul>
+     </div>
+      <div class="content">
+        <h2> "Pemain Bayern Munchen"</h2>
+         <div class="players">
+          <!-- Pemain 1 -->
+          <div class="player-card">
+           <div class="player-image">
+            <img src="juara1.jpg">
+           </div>
+            <!-- Pemain 2 -->
+          <div class="player-card">
+           <div class="player-image">
+            <img src="juara2.jpg">
+           </div>
+            <!-- Pemain 3 -->
+          <div class="player-card">
+           <div class="player-image">
+            <img src="juara3.jpg">
+           </div>
+            <!-- Pemain 4 -->
+          <div class="player-card">
+           <div class="player-image">
+            <img src="juara4.jpg">
+           </div>
+            <!-- Pemain 5 -->
+          <div class="player-card">
+           <div class="player-image">
+            <img src="juara5.jpg">
+           </div>
+      </div>
+      <div class="footer">
+      <p>© 2025 FC Bayern Munchen Indonesia Fan Page - tidak berafilisasi resmi dengan Bayern FC</p>
+    </div>
+   </div>
+</body>
+</html>
